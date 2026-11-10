@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3: Promedio de notas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--
+    REQUISITO: vincula aquí tu propio archivo CSS.
+    Ejemplo: <link rel="stylesheet" href="estilos.css">
+  -->
+</head>
+<body>
+
+  <a href="index.html">&larr; Volver al inicio</a>
+
+  <h1>Ejercicio 3: Calcular el promedio de 3 notas</h1>
+
+  <h2>Descripción del ejercicio</h2>
+  <p>
+    Se pide calcular el promedio de 3 notas ingresadas por el usuario y
+    mostrar el resultado en el input de resultado.
+  </p>
+
+  <!--
+    Instrucciones:
+    1. Los inputs no tienen id ni name: accede a ellos desde tu JS recorriendo
+       el DOM del formulario.
+    2. Agrega el atributo onclick al botón "Calcular promedio", apuntando a
+       una función de tu JS.
+    3. Opcional: valida que las notas estén en un rango válido (por ejemplo
+       entre 0 y 5, o entre 0 y 10, según el sistema que uses).
+    4. El promedio es un campo de promedio: antes de mostrarlo, fórmatealo
+       con toFixed(2) para que quede con dos decimales.
+    5. Crea y vincula tu propio CSS y tu propio JS.
+  -->
+
+  <form>
+    <label for="nota1">Nota 1:</label>
+    <input id="nota1" type="number" step="0.1" placeholder="Nota 1">
+
+    <label for="nota2">Nota 2:</label>
+    <input id="nota2" type="number" step="0.1" placeholder="Nota 2">
+
+    <label for="nota3">Nota 3:</label>
+    <input id="nota3" type="number" step="0.1" placeholder="Nota 3">
+
+    <button onclick="calcular()" type="button">Calcular promedio</button>
+
+    <label for="promedio">Promedio:</label>
+    <input id="promedio" type="text" placeholder="Promedio" readonly>
+  </form>
+
+   <script src="js/promedio.js"></script>
+  
+
+</body>
+</html>
